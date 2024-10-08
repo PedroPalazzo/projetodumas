@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe do Projeto Dumas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Container comum */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #6e4876;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Estilo da navbar */
+nav {
+    background-color: #8c60a2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo das seções */
+main {
+    padding: 20px 0;
+}
+
+/* Estilo da seção Intro */
+.intro {
+    background-color: #ce93cb;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8c60a2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.intro .btn:hover {
+    background-color: #6e4876;
+}
+
+/* Estilo da seção Sobre o Projeto */
+.about {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #6e4876;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    color: #8c60a2;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    margin-top: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #8c60a2;
+    border-radius: 8px;
+}
+
+/* Estilo da seção Resultados */
+.results {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 2em;
+    color: #6e4876;
+    margin-bottom: 20px;
+}
+
+.results h3 {
+    font-size: 1.5em;
+    color: #8c60a2;
+    margin-top: 20px;
+}
+
+.results p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.results-images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.results-images img {
+    max-width: 45%;
+    height: auto;
+    border: 2px solid #8c60a2;
+    border-radius: 8px;
+}
+
+/* Estilo da seção Equipe */
+.team {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2em;
+    color: #6e4876;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    background-color: #fa846e;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.1em;
+}
+
+/* Estilo do rodapé */
+/* Estilo do rodapé */
+footer {
+    background-color: #6e4876;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+footer .instagram-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+footer .instagram-link img {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+footer .instagram-link:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="WhatsApp_Image_2024-08-15_at_2.47.48_PM-removebg-preview.png" alt="Logo do Projeto Dumas" class="logo">
+            <h1>Projeto Dumas</h1>
+            <h2>Facilitando o Acesso a Equipamentos Esportivos e Promovendo a Sustentabilidade</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="resultados.html">Resultados</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <section class="team">
+            <div class="container">
+                <h2>Conheça a Equipe</h2>
+                
+                <div class="team-member">
+                    <h3>Elisa Vitória Candido de Almeida e João Victor de Moraes Godoy</h3>
+                    <p>Alunos do Terceiro ano de Logística responsáveis pela organização do projeto, montagem do slogan, jingle, e demais partes burocráticas.</p>
+                </div>
+
+                <div class="team-member">
+                    <h3>Pedro Palazzo La Torre dos Santos, João Pedro Ramalho, Danilo Ferreira Roque e Pedro Eduardo Lourenço</h3>
+                    <p>Alunos do Segundo ano de Desenvolvimento de Sistemas encarregados da criação do site e Instagram para divulgação do projeto.</p>
+                </div>
+
+                <div class="team-member">
+                    <h3>Beatriz Honorio Talhaferro, Victor Hugo Dos Santos Pereira e Raissa Liriam Camargo</h3>
+                    <p>Alunos do Segundo ano de Design responsáveis pela identidade visual do projeto e pelos meios de comunicação.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Projeto Dumas. Todos os direitos reservados.</p>
+            <p>Conecte-se conosco:</p>
+            <a href="https://www.instagram.com/dumas.recicla" target="_blank" class="instagram-link">
+                <img src="insta.png" alt="Instagram">
+                Siga-nos no Instagram
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
